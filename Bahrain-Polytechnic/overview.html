@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Project overview and requirements | Bahrain Polytechnic Student Project
+    </title>
+    <link rel="icon" href="images/bp-official-icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="styles/modern.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="home.html" aria-label="Bahrain Polytechnic home">
+        <img
+        src="images/bp-official-logo.png" alt="Bahrain Polytechnic | بوليتكنك البحرين" />
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="home.html">
+          Home
+        </a>
+        <a
+        href="subtopic1.html">
+          About
+        </a>
+        <a href="subtopic2.html">
+          Study
+        </a>
+        <a href="subtopic3.html">
+          Visit
+        </a>
+        <a
+        href="planning-design.html">
+          Design plan
+        </a>
+        <a class="active nav-register" href="overview.html">
+          Overview
+          <span>
+            ↗
+          </span>
+        </a>
+      </nav>
+      <details class="mobile-menu">
+        <summary>
+          Menu
+          <span>
+            ＋
+          </span>
+        </summary>
+        <nav aria-label="Mobile navigation">
+          <a href="home.html">
+            Home
+          </a>
+          <a href="subtopic1.html">
+            About
+          </a>
+          <a
+          href="subtopic2.html">
+            Study
+          </a>
+          <a href="subtopic3.html">
+            Visit
+          </a>
+          <a href="planning-design.html">
+            Design plan
+          </a>
+          <a href="reflection-ai-report.html">
+            Reflection and AI report
+          </a>
+          <a href="overview.html">
+            Project overview
+          </a>
+        </nav>
+      </details>
+    </header>
+    <main>
+      <section class="page-masthead">
+        <p class="kicker">
+          PROJECT DOCUMENTATION / 07
+        </p>
+        <h1>
+          Project
+          <br />
+          <em>
+            overview.
+          </em>
+        </h1>
+        <p>
+          Scope, requirements, design references, AI use and source notes for the Bahrain Polytechnic
+          student website.
+        </p>
+        <span class="masthead-index">
+          ASSESSMENT RECORD
+        </span>
+      </section>
+      <section class="overview-section page-wrap">
+        <p class="section-index">
+          01 / PROJECT OVERVIEW
+        </p>
+        <div class="overview-grid">
+          <article>
+            <h3>
+              Website title
+            </h3>
+            <p>
+              Make Learning Matter — Bahrain Polytechnic Student Project
+            </p>
+          </article>
+          <article>
+            <h3>
+              Website category
+            </h3>
+            <p>
+              Educational and institutional informational website
+            </p>
+          </article>
+          <article class="overview-wide">
+            <h3>
+              Problem statement
+            </h3>
+            <p>
+              Prospective students need a clear starting point to learn about an institution, explore study
+              topics and find reliable contact and admissions information. This coursework website organizes
+              introductory information and directs visitors to official sources for current details.
+            </p>
+          </article>
+          <article>
+            <h3>
+              Target audience
+            </h3>
+            <p>
+              Prospective students and visitors seeking an introduction to Bahrain Polytechnic.
+            </p>
+          </article>
+          <article>
+            <h3>
+              Project objectives
+            </h3>
+            <ul>
+              <li>
+                Build a seven-page responsive website.
+              </li>
+              <li>
+                Provide consistent navigation and topic-specific content.
+              </li>
+              <li>
+                Validate the required registration fields in the browser.
+              </li>
+              <li>
+                Document design choices, AI use, sources and limitations.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="overview-section overview-tint">
+        <div class="page-wrap">
+          <p class="section-index">
+            02 / REQUIREMENT ANALYSIS
+          </p>
+          <div class="overview-grid">
+            <article>
+              <h3>
+                Functional requirements
+              </h3>
+              <ul>
+                <li>
+                  Navigate between exactly seven HTML pages.
+                </li>
+                <li>
+                  Show an introduction, overview, hero, navigation, CTA and registration form on Home.
+                </li>
+                <li>
+                  Require first and last names of at least three characters.
+                </li>
+                <li>
+                  Require a mobile number of exactly eight digits.
+                </li>
+                <li>
+                  Validate email format and show accessible error/success feedback.
+                </li>
+                <li>
+                  Provide working internal links, official source links and an embedded location map.
+                </li>
+                <li>
+                  Display planning, reflection, AI usage and project documentation.
+                </li>
+              </ul>
+            </article>
+            <article>
+              <h3>
+                Non-functional requirements
+              </h3>
+              <ul>
+                <li>
+                  <b>
+                    Performance:
+                  </b>
+                  static HTML/CSS/JS; images set to content-appropriate sizes; map loaded lazily.
+                </li>
+                <li>
+                  <b>
+                    Accessibility:
+                  </b>
+                  semantic landmarks, heading hierarchy, labelled inputs, alt text, visible focus and live form
+                  feedback.
+                </li>
+                <li>
+                  <b>
+                    Security and privacy:
+                  </b>
+                  no backend, account system, data storage, or transmission; form states this clearly.
+                </li>
+                <li>
+                  <b>
+                    Usability:
+                  </b>
+                  concise labels, consistent navigation and obvious next steps.
+                </li>
+                <li>
+                  <b>
+                    Responsiveness:
+                  </b>
+                  desktop, tablet and mobile layouts with CSS breakpoints.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="overview-section page-wrap">
+        <p class="section-index">
+          03 / SITE MAP
+          &
+          USER JOURNEY
+        </p>
+        <h3>
+          Site map
+        </h3>
+        <nav class="sitemap overview-sitemap" aria-label="Project sitemap">
+          <a href="home.html">
+            <b>
+              1. Home
+            </b>
+            <span>
+              Introduction · CTA · Registration form
+            </span>
+          </a>
+          <div class="sitemap-branches">
+            <a href="subtopic1.html">
+              <b>
+                2. Subtopic 1
+              </b>
+              <span>
+                About
+              </span>
+            </a>
+            <a
+            href="subtopic2.html">
+              <b>
+                3. Subtopic 2
+              </b>
+              <span>
+                Study areas
+              </span>
+            </a>
+            <a href="subtopic3.html">
+              <b>
+                4. Subtopic 3
+              </b>
+              <span>
+                Visit and contact
+              </span>
+            </a>
+          </div>
+          <a href="planning-design.html">
+            <b>
+              5. Planning
+              &
+              Design
+            </b>
+            <span>
+              Wireframes · decisions · responsive plan
+            </span>
+          </a>
+          <a href="reflection-ai-report.html">
+            <b>
+              6. Reflection
+              &
+              AI Report
+            </b>
+            <span>
+              Reflection · AI use
+            </span>
+          </a>
+          <a href="overview.html">
+            <b>
+              7. Project Overview
+            </b>
+            <span>
+              Requirements · AI evidence · sources
+            </span>
+          </a>
+        </nav>
+        <h3 class="journey-title">
+          User journey map
+        </h3>
+        <ol class="journey-map overview-journey">
+          <li>
+            <span>
+              01 · ARRIVE
+            </span>
+            <b>
+              Home
+            </b>
+            <p>
+              Read the introduction and choose a route.
+            </p>
+          </li>
+          <li>
+            <span>
+              02 · EXPLORE
+            </span>
+            <b>
+              About or Study
+            </b>
+            <p>
+              Review topic information.
+            </p>
+          </li>
+          <li>
+            <span>
+              03 · CHECK
+            </span>
+            <b>
+              Visit
+            </b>
+            <p>
+              Find official contacts and directions.
+            </p>
+          </li>
+          <li>
+            <span>
+              04 · ACT
+            </span>
+            <b>
+              Register
+            </b>
+            <p>
+              Validate details locally on Home.
+            </p>
+          </li>
+          <li>
+            <span>
+              05 · RETURN
+            </span>
+            <b>
+              Nav / footer
+            </b>
+            <p>
+              Continue to documentation or return Home.
+            </p>
+          </li>
+        </ol>
+        <div class="overview-page-links">
+          <a href="home.html">
+            01 Home ↗
+          </a>
+          <a href="subtopic1.html">
+            02 Subtopic 1 · About ↗
+          </a>
+          <a href="subtopic2.html">
+            03 Subtopic 2 · Study ↗
+          </a>
+          <a href="subtopic3.html">
+            04 Subtopic 3 · Visit ↗
+          </a>
+          <a href="planning-design.html">
+            05 Planning
+            &
+            Design ↗
+          </a>
+          <a href="reflection-ai-report.html">
+            06 Reflection
+            &
+            AI Report ↗
+          </a>
+          <a href="overview.html">
+            07 Project Overview ↗
+          </a>
+        </div>
+      </section>
+      <section class="overview-section overview-tint">
+        <div class="page-wrap">
+          <p class="section-index">
+            04 / WIREFRAMES
+            &
+            HIGH-FIDELITY MOCKUPS
+          </p>
+          <h3>
+            Low-fidelity wireframes for all seven pages
+          </h3>
+          <div class="wireframe-grid overview-wireframes">
+            <article class="wireframe">
+              <b>
+                1 · HOME
+              </b>
+              <div class="wf-nav">
+                LOGO · NAV
+              </div>
+              <div class="wf-hero">
+                HERO + INTRO
+              </div>
+              <div class="wf-row">
+                <i>
+                  TOPIC LINKS
+                </i>
+                <i>
+                  CTA
+                </i>
+                <i>
+                  REGISTER FORM
+                </i>
+              </div>
+            </article>
+            <article class="wireframe">
+              <b>
+                2 · SUBTOPIC 1
+              </b>
+              <div class="wf-nav">
+                LOGO · NAV
+              </div>
+              <div class="wf-hero">
+                ABOUT MASTHEAD
+              </div>
+              <div class="wf-row">
+                <i>
+                  IMAGE
+                </i>
+                <i>
+                  ABOUT COPY
+                </i>
+                <i>
+                  KEY POINTS
+                </i>
+              </div>
+            </article>
+            <article class="wireframe">
+              <b>
+                3 · SUBTOPIC 2
+              </b>
+              <div class="wf-nav">
+                LOGO · NAV
+              </div>
+              <div class="wf-hero">
+                STUDY INTRO
+              </div>
+              <div class="wf-row">
+                <i>
+                  IMAGE
+                </i>
+                <i>
+                  LEARNING
+                </i>
+                <i>
+                  STUDY AREAS
+                </i>
+              </div>
+            </article>
+            <article class="wireframe">
+              <b>
+                4 · SUBTOPIC 3
+              </b>
+              <div class="wf-nav">
+                LOGO · NAV
+              </div>
+              <div class="wf-hero">
+                VISIT MASTHEAD
+              </div>
+              <div class="wf-row">
+                <i>
+                  CONTACT
+                </i>
+                <i>
+                  OFFICIAL LINKS
+                </i>
+                <i>
+                  MAP
+                </i>
+              </div>
+            </article>
+            <article class="wireframe">
+              <b>
+                5 · PLANNING
+                &
+                DESIGN
+              </b>
+              <div class="wf-nav">
+                LOGO · NAV
+              </div>
+              <div class="wf-hero">
+                PLAN INTRO
+              </div>
+              <div class="wf-row">
+                <i>
+                  SITEMAP
+                </i>
+                <i>
+                  JOURNEY
+                </i>
+                <i>
+                  WIREFRAMES
+                </i>
+              </div>
+            </article>
+            <article class="wireframe">
+              <b>
+                6 · REFLECTION
+                &
+                AI
+              </b>
+              <div class="wf-nav">
+                LOGO · NAV
+              </div>
+              <div class="wf-hero">
+                REPORT TITLE
+              </div>
+              <div class="wf-row">
+                <i>
+                  REFLECTION
+                </i>
+                <i>
+                  TEAM
+                </i>
+                <i>
+                  AI SUMMARY
+                </i>
+              </div>
+            </article>
+            <article class="wireframe">
+              <b>
+                7 · OVERVIEW
+              </b>
+              <div class="wf-nav">
+                LOGO · NAV
+              </div>
+              <div class="wf-hero">
+                PROJECT SUMMARY
+              </div>
+              <div class="wf-row">
+                <i>
+                  REQUIREMENTS
+                </i>
+                <i>
+                  AI TABLE
+                </i>
+                <i>
+                  SOURCES
+                </i>
+              </div>
+            </article>
+          </div>
+          <h3 class="journey-title">
+            Implemented high-fidelity mockups
+          </h3>
+          <p>
+            The seven live pages are the high-fidelity mockups, showing the final layout, blue-forward
+            palette, typography, navigation, cards and form components. Open any page to review its rendered
+            design.
+          </p>
+          <div class="overview-page-links">
+            <a href="home.html">
+              Home mockup ↗
+            </a>
+            <a href="subtopic1.html">
+              Subtopic 1 mockup ↗
+            </a>
+            <a href="subtopic2.html">
+              Subtopic 2 mockup ↗
+            </a>
+            <a href="subtopic3.html">
+              Subtopic 3 mockup ↗
+            </a>
+            <a
+            href="planning-design.html">
+              Planning mockup ↗
+            </a>
+            <a href="reflection-ai-report.html">
+              Reflection mockup ↗
+            </a>
+            <a href="overview.html">
+              Overview mockup ↗
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="overview-section page-wrap">
+        <p class="section-index">
+          05 / UI STYLE GUIDE
+          &
+          RESPONSIVE PLAN
+        </p>
+        <div class="overview-grid">
+          <article>
+            <h3>
+              Colour palette
+            </h3>
+            <p>
+              Primary navy
+              <code>
+                #1D3472
+              </code>
+              ; secondary blue
+              <code>
+                #2868B2
+              </code>
+              ; cyan accent
+              <code>
+                #54D9DF
+              </code>
+              ; paper background
+              <code>
+                #F5F6EF
+              </code>
+              ; ink
+              <code>
+                #112D46
+              </code>
+              .
+            </p>
+          </article>
+          <article>
+            <h3>
+              Typography
+            </h3>
+            <p>
+              Space Grotesk for headings and DM Sans for body text, each with system sans-serif fallbacks.
+            </p>
+          </article>
+          <article>
+            <h3>
+              Components
+            </h3>
+            <p>
+              Sticky navigation and responsive disclosure menu; buttons; cards; labelled form inputs; visible
+              validation status; shared footer.
+            </p>
+          </article>
+          <article>
+            <h3>
+              Device layouts
+            </h3>
+            <p>
+              Desktop uses split and multi-column layouts. Tablet reduces columns and spacing. Mobile stacks
+              sections and fields, exposes a disclosure menu, and keeps controls full-width where useful.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="overview-section overview-tint">
+        <div class="page-wrap">
+          <p class="section-index">
+            06 / AI UTILIZATION PLAN
+          </p>
+          <div class="overview-grid">
+            <article>
+              <h3>
+                Tools selected
+              </h3>
+              <p>
+                Claude, Gemini and ChatGPT, as reported by the group. ChatGPT/Codex was used in this session.
+              </p>
+            </article>
+            <article>
+              <h3>
+                Purpose
+              </h3>
+              <p>
+                Support planning, design exploration, content drafting, code refinement and requirements review.
+              </p>
+            </article>
+            <article>
+              <h3>
+                Expected outcomes
+              </h3>
+              <p>
+                Generate options and implementation suggestions that the group reviews, tests and adapts.
+              </p>
+            </article>
+            <article>
+              <h3>
+                Evaluation
+              </h3>
+              <p>
+                Verify claims against official sources; check code against assignment criteria; revise
+                unsuitable or unsupported outputs; retain human responsibility for the final work.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="overview-section page-wrap">
+        <p class="section-index">
+          07 / AI DOCUMENTATION TABLE
+        </p>
+        <p>
+          The group used Claude, Gemini and ChatGPT during the project lifecycle. The recorded
+          ChatGPT/Codex prompts and resulting website changes are summarized below.
+        </p>
+        <div class="table-scroll">
+          <table class="ai-documentation">
+            <thead>
+              <tr>
+                <th>
+                  AI Tool
+                </th>
+                <th>
+                  Purpose
+                </th>
+                <th>
+                  Prompt Used / Evidence
+                </th>
+                <th>
+                  Output Generated
+                </th>
+                <th>
+                  Evaluation
+                  &
+                  Modifications
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>
+                  Claude
+                </th>
+                <td>
+                  AI-assisted support during the group website project.
+                </td>
+                <td>
+                  Platform use reported by the group.
+                </td>
+                <td>
+                  AI assistance contributed to project development.
+                </td>
+                <td>
+                  Reviewed and adapted within the group project.
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  Gemini
+                </th>
+                <td>
+                  AI-assisted support during the group website project.
+                </td>
+                <td>
+                  Platform use reported by the group.
+                </td>
+                <td>
+                  AI assistance contributed to project development.
+                </td>
+                <td>
+                  Reviewed and adapted within the group project.
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  ChatGPT / Codex
+                </th>
+                <td>
+                  Design direction, official logo correction, sticky navigation, registration redesign and
+                  requirements review.
+                </td>
+                <td>
+                  Recorded prompts: “the logo is wrong make sure to use Bahrain Polytechnic new logo”; “I want the
+                  bar above the page to be shown even if I scrolled down”; “update the register you details page
+                  make it more modern”; “make sure that the project meets all the requirements”.
+                </td>
+                <td>
+                  New page structures and styles, a Home registration form with field validation, and assignment
+                  documentation.
+                </td>
+                <td>
+                  Checked the brief, verified contact details against official university sources, revised the
+                  layouts and added clear messages that form data is not sent or stored.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="overview-section overview-tint">
+        <div class="page-wrap">
+          <p class="section-index">
+            08 / ETHICAL
+            &
+            LEGAL PRACTICE
+          </p>
+          <ul class="ethics-list">
+            <li>
+              Identify the website as a student coursework project, not an official university service.
+            </li>
+            <li>
+              Check factual claims and send visitors to official pages for changing admissions information.
+            </li>
+            <li>
+              Document AI assistance and review generated content rather than treating it as authoritative.
+            </li>
+            <li>
+              Credit media and follow its license. The provided project files do not identify the original
+              creators or licenses of the local photographs; the group must confirm and add those credits, or
+              replace images with properly licensed media before submission.
+            </li>
+            <li>
+              Use the official Bahrain Polytechnic logo only in a context that does not imply university
+              endorsement.
+            </li>
+            <li>
+              Collect no personal information in this static demo; its form validates locally only.
+            </li>
+            <li>
+              Write original content and code, and retain group evidence of contributions and decisions.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="overview-section page-wrap">
+        <p class="section-index">
+          09 / SOURCES
+          &
+          MEDIA CREDITS
+        </p>
+        <ul class="source-list">
+          <li>
+            <a
+            href="https://www.polytechnic.bh/about-us/our-brand/"
+            target="_blank"
+            rel="noreferrer"
+            >
+              Bahrain Polytechnic — Our Brand
+              <span>
+                Logo and brand reference ↗
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+            href="https://www.polytechnic.bh/wp-content/uploads/2014/11/Logos-2025-Short-Version-1-2.pdf"
+            target="_blank"
+            rel="noreferrer"
+            >
+              Bahrain Polytechnic — 2025 short logo kit
+              <span>
+                Official logo files ↗
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+            href="https://www.polytechnic.bh/admission/admission-faq/"
+            target="_blank"
+            rel="noreferrer"
+            >
+              Bahrain Polytechnic — Admissions FAQ
+              <span>
+                Admissions contact details and visiting information ↗
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+            href="https://www.polytechnic.bh/about-us/bahrain-polytechnic-life/campus-map/"
+            target="_blank"
+            rel="noreferrer"
+            >
+              Bahrain Polytechnic — Campus Map
+              <span>
+                Official campus location ↗
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.polytechnic.bh/academics/" target="_blank" rel="noreferrer">
+              Bahrain Polytechnic — Academics
+              <span>
+                Official academic information ↗
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://fonts.google.com/specimen/DM+Sans" target="_blank" rel="noreferrer">
+              Google Fonts — DM Sans
+              <span>
+                Body typeface ↗
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+            href="https://fonts.google.com/specimen/Space+Grotesk"
+            target="_blank"
+            rel="noreferrer"
+            >
+              Google Fonts — Space Grotesk
+              <span>
+                Heading typeface ↗
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p>
+          <b>
+            Media:
+          </b>
+          The university logo and icon are from the official 2025 short logo kit. Photographs are retained
+          from the supplied project image folder; their individual source and license details were not
+          present in the project files. The group must verify and add photographer/source/license credits
+          or replace them before submission.
+        </p>
+      </section>
+      <section class="process-close">
+        <p class="section-index">
+          FINAL REVIEW
+        </p>
+        <h2>
+          Evidence makes
+          <br />
+          <em>
+            the work yours.
+          </em>
+        </h2>
+        <p class="planning-close-copy">
+          Complete the outstanding team-specific AI records and image credits, then check every page and
+          the form on desktop, tablet and mobile.
+        </p>
+        <a class="button button-light"
+        href="reflection-ai-report.html">
+          Read the reflection
+          <span>
+            ↗
+          </span>
+        </a>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="footer-brand" href="home.html">
+        <img src="images/bp-official-logo.png"
+        alt="Bahrain Polytechnic" />
+      </a>
+      <p>
+        Coursework website concept.
+        <br />
+        Isa Town, Kingdom of Bahrain.
+      </p>
+      <div class="footer-links">
+        <a href="planning-design.html">
+          Design plan
+        </a>
+        <a
+        href="reflection-ai-report.html">
+          Reflection
+        </a>
+        <a href="home.html#register">
+          Registration
+        </a>
+      </div>
+      <span
+      class="copyright">
+        IT6012 · Web Fundamentals
+      </span>
+    </footer>
+  </body>
+</html>
